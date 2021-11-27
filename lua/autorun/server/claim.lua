@@ -52,5 +52,6 @@ hook.Add( "PlayerSay", "claim", function( sender, text )
 			Frame:Close()
 			setGroup(ply, "pvp")
 		end
+		return ""
 	end
 end)
