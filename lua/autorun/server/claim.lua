@@ -6,13 +6,13 @@ local function setGroup(ply, group)
 
 	-- ULib.ucl.addUser( ply:SteamID(), nil, nil, role )
 
-	if aga = SGRF.IsPlayerInGroup(ply) then
+	if aga == SGRF.IsPlayerInGroup(ply) then
 		ULib.ucl.addUser( ply:SteamID(), nil, nil, role )
 		ply:ChatPrint("Вам выдана роль. Приятной игры!")
 	else
 		ply:ChatPrint("Вам нужно присоединиться к нашей группе в Стиме. (!sg в чат)")
 	end
-end)
+end
  
 hook.Add( "PlayerSay", "claim", function( sender, text )
 	if text == "!claim" or text == "/claim" then
