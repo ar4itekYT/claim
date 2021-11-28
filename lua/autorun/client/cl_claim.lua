@@ -2,8 +2,6 @@
 
 net.Receive("Claim", function(len, ply)
 
-		ply = net.ReadEntity()
-
 		local Frame = vgui.Create( "DFrame" )
 		Frame:SetTitle( "Выбери свою роль" )
 		Frame:SetSize( 300,320 )
