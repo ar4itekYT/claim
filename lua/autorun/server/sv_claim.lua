@@ -3,7 +3,6 @@ util.AddNetworkString( "Claim" )
 
 net.Receive("Claim", function(len, ply)
 
-	group = nil
 	local group = net.ReadBool() -- бул, потому что безопаснее
 
 	if not ply:IsValid() then return end -- если чел резко ливнул, или баг
