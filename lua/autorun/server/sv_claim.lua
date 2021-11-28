@@ -27,5 +27,6 @@ hook.Add( "PlayerSay", "claim", function( sender, text )
 	if text == "!claim" or text == "/claim" then
 		net.Start( "Claim" )
         	net.Send(sender)
+		return ""
 	end
 end)
