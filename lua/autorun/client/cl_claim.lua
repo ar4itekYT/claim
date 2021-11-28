@@ -2,7 +2,6 @@
 
 net.Receive("Claim", function(len, ply)
 
-		ply = nil
 		ply = net.ReadEntity()
 
 		local Frame = vgui.Create( "DFrame" )
